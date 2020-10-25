@@ -18,5 +18,6 @@ These options can be configured by clicking on the extension icon on the browser
 - Whenever a change is detected on any widget, all spans with `label` in its class are fetched and checked for whether they have any of the phrases to remove in them 
 
 # Limitations
+- Takes 2 seconds to kick in. Kept as such because complex dashboards take some time to load at least 1 widget. Could not observe DOM because DOM is loaded even before widgets appear.
 - Since the mutation observer is added to entire widget divs, even hover changes on graphs invoke the observer. This is leading to performance lag while hovering over complex line graphs
 - Observer is never disconnected. It should be disconnected when on non-dashboard pages & then reconnect when back (issue is because of the use of `background` script, which is currently necessary because New Relic navigation doesn't always invoke the `content-script`)
