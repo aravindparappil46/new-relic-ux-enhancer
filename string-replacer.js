@@ -4,7 +4,6 @@ prevNumOfLabelsFound = 0
 // Getting values selected by user in Options
 chrome.storage.sync.get({ "phrasesToRemove": ["WebTransaction/SpringController/"]}, function (options) {
     phrasesToRemove = options.phrasesToRemove;
-    console.log(phrasesToRemove);
 });
 
 // Wait for 2 seconds so as to let the Widgets load
