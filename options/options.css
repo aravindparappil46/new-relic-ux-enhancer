@@ -1,0 +1,22 @@
+#content {
+    width: 90%;
+    margin: auto;
+}
+
+#messageSpan {
+    color: green;
+    font-size: smaller;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.div-options {
+    margin-bottom: 5px;
+}
+
+#phrases {
+    width: 100%;
+    height: 10em;
+}

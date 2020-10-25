@@ -1,0 +1,31 @@
+{
+  "name": "New Relic UX Enhancer",
+  "version": "1.0.0",
+  "description": "Clean up some noise within the New Relic Dashboards!",
+  "manifest_version": 2,
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": false
+  },
+  "permissions": [
+    "https://one.newrelic.com/launcher/dashboards*",
+    "storage",
+    "tabs",
+    "webNavigation"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://one.newrelic.com/launcher/dashboards*"],
+      "css": ["styles.css"],
+      "js": ["jquery-3.5.1.min.js", "string-replacer.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "scripts": ["jquery-3.5.1.min.js", "background.js"],
+    "persistent": false
+  },
+  "icons": {
+    "128": "logo.png"
+  }
+}
