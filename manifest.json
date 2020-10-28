@@ -10,7 +10,7 @@
   "permissions": [
     "https://one.newrelic.com/launcher/dashboards*",
     "storage",
-    "tabs",
+    "activeTab",
     "webNavigation"
   ],
   "content_scripts": [
