@@ -1,7 +1,7 @@
 # New Relic UX Enhancer
 Chrome extension to clean up unwanted noise within New Relic!
 
-Find it [here](https://chrome.google.com/webstore/detail/aws-favorites-to-pins/ncldghmgebieadpbefcmhicjepidmnhc/) on the Chrome Web Store!
+Find it [here](https://chrome.google.com/webstore/detail/new-relic-ux-enhancer/gfpcghonlolcinhfiaaalncocjjpjbif/) on the Chrome Web Store!
 
 Most New Relic dashboards may have certain junk text (in chart legends, table rows etc.) which is unimportant and truncates actual information from view. This extension finds and removes such phrases which the user deems unimportant.
 
